@@ -1,0 +1,15 @@
+﻿@*In the Home Controller's Index action use the private data field referencing the service to generate a Quote and pass the return value off to the view*@
+@model RandomQuotes.Models.Quote
+@{
+}
+
+<div class="text-left">
+    <h1 class="display-4">This is the Other Page</h1>
+    <p>This is just simply another page - also not very exciting!</p>
+
+    @*add links between the 2 pages - i.e. the Home page should have a link to the OtherPage and vice versa.*@
+    <p>Return to the <a asp-action="Index" asp-controller="Home">home page.</a></p>
+    <p><b>A quote to share...</b></p>
+    <p><i>@Model.Text</i></p>
+    <p><b>@Model.Author</b></p>
+</div>

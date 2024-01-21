@@ -1,0 +1,45 @@
+﻿<Properties StartupConfiguration="{29BF55BA-C8FF-426F-9705-E16568EBF9E6}|https">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RandomQuotes/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="RandomQuotes/Controllers/HomeController.cs" Line="42" Column="6" />
+      <File FileName="RandomQuotes/Views/Home/Index.cshtml" />
+      <File FileName="RandomQuotes/Views/Home/Other.cshtml" />
+      <File FileName="RandomQuotes/Services/QuoteService.cs" />
+      <File FileName="RandomQuotes/Program.cs" />
+      <File FileName="RandomQuotes/Services/IQuoteService.cs" />
+      <File FileName="RandomQuotes/Views/Shared/_Layout.cshtml" Line="52" Column="1" />
+      <File FileName="RandomQuotes/Models/Quote.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RandomQuotes" expanded="True">
+            <Node name="RandomQuotes" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>bmiViewModel</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.RandomQuotes PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

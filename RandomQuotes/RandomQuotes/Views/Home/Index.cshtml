@@ -1,0 +1,17 @@
+﻿@*Update the Index.cshtml file for the app's home page to have a Quote as a model*@
+@model RandomQuotes.Models.Quote
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-left">
+    <h1 class="display-4">Welcome to the Home Page</h1>
+    <p>This is a simple home page - very boring!</p>
+
+    @*add links between the 2 pages - i.e. the Home page should have a link to the OtherPage and vice versa.*@
+    <p>Check out our <a asp-action="Other" asp-controller="Home">other page</a></p>
+    <p><b>A quote to share...</b></p>
+    <p><i>@Model.Text</i></p>
+    <p><b>@Model.Author</b></p>
+</div>
+
