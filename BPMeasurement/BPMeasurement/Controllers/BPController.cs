@@ -5,17 +5,59 @@ namespace BPMeasurement.Controllers
 {
     public class BPController : Controller
     {
-        private BPDbContext _bpDbContext;
+        private BPDbContext _bpDbContext { get; set; }
 
-        public BPController(BPDbContext bpDbContext)
+        public BPController(BPDbContext ctx)
         {
-            _bpDbContext = bpDbContext;
+            _bpDbContext = ctx;
         }
 
-        public IActionResult List()
+        [HttpGet]
+        public IActionResult Add()
         {
-            List<BloodPressure> bPressures = _bpDbContext.BloodPressures.OrderBy(m => m.DateTime).ToList();
-            return View(bPressures);
+            ViewBag.Action = "Add";
+            return View("Edit", new BloodPressure());
+        }
+
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            ViewBag.Action = "Edit";
+            var bp = _bpDbContext.BloodPressures.Find(id);
+            return View(bp);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(BloodPressure bp)
+        {
+            if (ModelState.IsValid)
+            {
+                if (bp.BloodPressureId == 0)
+                    _bpDbContext.Add(bp);
+                else
+                    _bpDbContext.Update(bp);
+                _bpDbContext.SaveChanges();
+                return RedirectToAction("Index", "Home");
+            } else
+            {
+                ViewBag.Action = (bp.BloodPressureId == 0) ? "Add" : "Edit";
+                return View(bp);
+            }
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var bp = _bpDbContext.BloodPressures.Find(id);
+            return View(bp);
+        }
+
+        [HttpPost]
+        public IActionResult Delete(BloodPressure bp)
+        {
+            _bpDbContext.BloodPressures.Remove(bp);
+            _bpDbContext.SaveChanges();
+            return RedirectToAction("Index", "Home"); 
         }
     }
 }

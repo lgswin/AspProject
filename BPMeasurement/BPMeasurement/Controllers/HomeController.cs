@@ -1,21 +1,24 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using BPMeasurement.Models;
+using BPMeasurement.Entities;
 
 namespace BPMeasurement.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    // private readonly ILogger<HomeController> _logger;
+    private BPDbContext _bpDbContext;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(BPDbContext ctx)
     {
-        _logger = logger;
+        _bpDbContext = ctx;
     }
 
     public IActionResult Index()
     {
-        return View();
+        var bps = _bpDbContext.BloodPressures.OrderBy(m => m.DateTime).ToList();
+        return View(bps);
     }
 
     public IActionResult Privacy()

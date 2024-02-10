@@ -1,9 +1,30 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using BPMeasurement.Entities
+@model List<BloodPressure>
+@{ViewData["Title"] = "All Blood Pressure data";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<a asp-controller="BP" asp-action="Add">Add new</a>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Reading</th>
+            <th>Data Taken</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (BloodPressure bp in Model)
+        {
+            <tr>
+                <td>@bp.Systolic/@bp.Diastolic</td>
+                <td>@bp.DateTime</td>
 
+                <td>
+                    <a asp-controller="BP" asp-action="Edit" asp-route-id="@bp.BloodPressureId">Edit</a>
+                    <span class="mx-1">|</span>
+                    <a asp-controller="BP" asp-action="Delete" asp-route-id="@bp.BloodPressureId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

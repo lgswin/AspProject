@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BPMeasurement.Migrations
 {
     [DbContext(typeof(BPDbContext))]
-    [Migration("20240210015831_Initial")]
+    [Migration("20240210195809_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
