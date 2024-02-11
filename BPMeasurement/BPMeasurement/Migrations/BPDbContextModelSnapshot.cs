@@ -53,7 +53,7 @@ namespace BPMeasurement.Migrations
                         new
                         {
                             BloodPressureId = 1,
-                            DateTime = new DateTime(2000, 2, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DateTime = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Diastolic = 80,
                             PositionId = "1",
                             Systolic = 120
@@ -61,26 +61,58 @@ namespace BPMeasurement.Migrations
                         new
                         {
                             BloodPressureId = 2,
-                            DateTime = new DateTime(2000, 1, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DateTime = new DateTime(2024, 1, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Diastolic = 79,
-                            PositionId = "1",
+                            PositionId = "2",
                             Systolic = 122
                         },
                         new
                         {
                             BloodPressureId = 3,
-                            DateTime = new DateTime(2000, 12, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DateTime = new DateTime(2024, 1, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Diastolic = 100,
+                            PositionId = "3",
+                            Systolic = 130
+                        },
+                        new
+                        {
+                            BloodPressureId = 4,
+                            DateTime = new DateTime(2024, 1, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Diastolic = 85,
+                            PositionId = "1",
+                            Systolic = 230
+                        },
+                        new
+                        {
+                            BloodPressureId = 5,
+                            DateTime = new DateTime(2024, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Diastolic = 80,
+                            PositionId = "2",
+                            Systolic = 120
+                        },
+                        new
+                        {
+                            BloodPressureId = 6,
+                            DateTime = new DateTime(2024, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Diastolic = 90,
+                            PositionId = "3",
+                            Systolic = 122
+                        },
+                        new
+                        {
+                            BloodPressureId = 7,
+                            DateTime = new DateTime(2024, 2, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Diastolic = 85,
                             PositionId = "1",
                             Systolic = 130
                         },
                         new
                         {
-                            BloodPressureId = 4,
-                            DateTime = new DateTime(2000, 11, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Diastolic = 85,
-                            PositionId = "1",
-                            Systolic = 230
+                            BloodPressureId = 8,
+                            DateTime = new DateTime(2024, 2, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Diastolic = 60,
+                            PositionId = "2",
+                            Systolic = 110
                         });
                 });
 

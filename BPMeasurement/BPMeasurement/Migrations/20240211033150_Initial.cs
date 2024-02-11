@@ -62,10 +62,14 @@ namespace BPMeasurement.Migrations
                 columns: new[] { "BloodPressureId", "DateTime", "Diastolic", "PositionId", "Systolic" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2000, 2, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), 80, "1", 120 },
-                    { 2, new DateTime(2000, 1, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), 79, "1", 122 },
-                    { 3, new DateTime(2000, 12, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), 85, "1", 130 },
-                    { 4, new DateTime(2000, 11, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), 85, "1", 230 }
+                    { 1, new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 80, "1", 120 },
+                    { 2, new DateTime(2024, 1, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), 79, "2", 122 },
+                    { 3, new DateTime(2024, 1, 12, 0, 0, 0, 0, DateTimeKind.Unspecified), 100, "3", 130 },
+                    { 4, new DateTime(2024, 1, 30, 0, 0, 0, 0, DateTimeKind.Unspecified), 85, "1", 230 },
+                    { 5, new DateTime(2024, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 80, "2", 120 },
+                    { 6, new DateTime(2024, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 90, "3", 122 },
+                    { 7, new DateTime(2024, 2, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), 85, "1", 130 },
+                    { 8, new DateTime(2024, 2, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), 60, "2", 110 }
                 });
 
             migrationBuilder.CreateIndex(
