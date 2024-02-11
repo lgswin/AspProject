@@ -16,7 +16,11 @@ namespace BPMeasurement.Controllers
         public IActionResult Add()
         {
             ViewBag.Action = "Add";
-            return View("Edit", new BloodPressure());
+            var newBloodPressure = new BloodPressure
+            {
+                DateTime = DateTime.Today
+            };
+            return View("Edit", newBloodPressure);
         }
 
         [HttpGet]

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using BPMeasurement.Models;
 using BPMeasurement.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace BPMeasurement.Controllers;
 
@@ -17,7 +18,9 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        var bps = _bpDbContext.BloodPressures.OrderBy(m => m.DateTime).ToList();
+        //var bps = _bpDbContext.BloodPressures.OrderBy(m => m.DateTime).ToList();
+        var bps = _bpDbContext.BloodPressures.Include(m => m.Position)
+                .OrderBy(m => m.DateTime).ToList();
         return View(bps);
     }
 
