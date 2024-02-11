@@ -20,3 +20,28 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.normal {
+    color: green;
+}
+
+.elevated {
+    color: orange;
+}
+
+.hypertension-stage1 {
+    color: darkorange;
+}
+
+.hypertension-stage2 {
+    color: red;
+}
+
+.hypertensive-crisis {
+    color: darkred;
+}
+
+/* Add this class to your CSS file */
+.unknown-category {
+    color: gray;
+}

@@ -8,18 +8,18 @@ namespace BPMeasurement.Entities
 		public int BloodPressureId { get; set; }
 
         [Required(ErrorMessage = "Please enter a correct number.")]
-        [Range(10, 200, ErrorMessage = "Blood pressure must be between 10 and 200.")]
+        [Range(10, 200, ErrorMessage = "Systolic must be between 10 and 300.")]
         public int Systolic { get; set; }
 
         [Required(ErrorMessage = "Please enter a correct number.")]
-        [Range(10, 200, ErrorMessage = "Blood pressure must be between 10 and 200.")]
+        [Range(10, 200, ErrorMessage = "Diastolic must be between 10 and 300.")]
         public int Diastolic { get; set; }
 
 		[DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime DateTime { get; set; }
 
-        [Required(ErrorMessage ="Please select a position")]
+        [Required(ErrorMessage ="Please enter a position for the measurement")]
 		public string? PositionId { get; set; }
         public Position? Position { get; set; }
 
@@ -37,11 +37,11 @@ namespace BPMeasurement.Entities
                 }
                 else if ((Systolic >= 130 && Systolic <= 139) || (Diastolic >= 80 && Diastolic <= 89))
                 {
-                    return "High Blood Pressure (Hypertension) Stage 1";
+                    return "Hypertension Stage 1";
                 }
                 else if (Systolic >= 140 || Diastolic >= 90)
                 {
-                    return "High Blood Pressure (Hypertension) Stage 2";
+                    return "Hypertension Stage 2";
                 }
                 else if (Systolic > 180 || Diastolic > 120)
                 {

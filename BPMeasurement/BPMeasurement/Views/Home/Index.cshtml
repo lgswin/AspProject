@@ -3,7 +3,7 @@
 @{ViewData["Title"] = "All Blood Pressure data";
 }
 
-<a asp-controller="BP" asp-action="Add">Add new</a>
+<a asp-controller="BP" asp-action="Add">Add new BP measurement</a>
 <table class="table table-bordered table-striped">
     <thead>
         <tr>
@@ -17,11 +17,34 @@
     <tbody>
         @foreach (BloodPressure bp in Model)
         {
+            var categoryClass = "";
+            switch (bp.Category)
+            {
+                case "Normal":
+                    categoryClass = "normal";
+                    break;
+                case "Elevated":
+                    categoryClass = "elevated";
+                    break;
+                case "Hypertension Stage 1":
+                    categoryClass = "hypertension-stage1";
+                    break;
+                case "Hypertension Stage 2":
+                    categoryClass = "hypertension-stage2";
+                    break;
+                case "Hypertensive Crisis":
+                    categoryClass = "hypertensive-crisis";
+                    break;
+                default:
+                    categoryClass = "unknown-category";
+                    break;
+            }
+
             <tr>
-                <td>@bp.Systolic/@bp.Diastolic</td>
-                <td>@bp.Category</td>
+                <td class="@categoryClass">@bp.Systolic/@bp.Diastolic</td>
+                <td class="@categoryClass">@bp.Category</td>
                 <td>@bp.Position.Name</td>
-                <td>@bp.DateTime</td>
+                <td>@bp.DateTime.ToString("yyyy-MM-dd")</td>
 
                 <td>
                     <a asp-controller="BP" asp-action="Edit" asp-route-id="@bp.BloodPressureId">Edit</a>

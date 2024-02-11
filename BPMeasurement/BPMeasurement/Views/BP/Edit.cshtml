@@ -9,19 +9,19 @@
 <form asp-action="Edit" method="post">
     <div class="text-danger" asp-validation-summary="All"></div>
     <div class="form-group">
-        <label asp-for="Systolic">Systolic(mm Hg)</label>
+        <label asp-for="Systolic">Systolic (mm Hg)</label>
         <input asp-for="Systolic" class="form-control" />
     </div>
 
     <div class="form-group">
-        <label asp-for="Diastolic">Diastolic(mm Hg)</label>
+        <label asp-for="Diastolic">Diastolic (mm Hg)</label>
         <input asp-for="Diastolic" class="form-control" />
     </div>
 
     <div class="form-group">
         <label asp-for="PositionId">Position</label>
         <select asp-for="PositionId" class="form-control">
-            <option value="">select a position</option>
+            <option value="">Select a measurement position</option>
             @foreach (Position p in ViewBag.Positions)
             {
                 <option value="@p.ID">@p.Name</option>

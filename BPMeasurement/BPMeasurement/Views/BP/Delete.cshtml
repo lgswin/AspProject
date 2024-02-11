@@ -4,7 +4,7 @@
 }
 
 <h2>Confirm Deletion</h2>
-<h3>@Model.Systolic / @Model.Diastolic (@Model.DateTime)</h3>
+<h3>@Model.Systolic / @Model.Diastolic (taken on @Model.DateTime.ToString("yyyy-MM-dd"))</h3>
 
 <form asp-action="Delete" method="post">
     <input type="hidden" asp-for="BloodPressureId" />
