@@ -16,6 +16,7 @@ namespace BPMeasurement.Controllers
         public IActionResult Add()
         {
             ViewBag.Action = "Add";
+			ViewBag.Positions = _bpDbContext.Positions.OrderBy(p => p.Name).ToList();
             var newBloodPressure = new BloodPressure
             {
                 DateTime = DateTime.Today
@@ -27,6 +28,7 @@ namespace BPMeasurement.Controllers
         public IActionResult Edit(int id)
         {
             ViewBag.Action = "Edit";
+            ViewBag.Positions = _bpDbContext.Positions.OrderBy(p => p.Name).ToList();
             var bp = _bpDbContext.BloodPressures.Find(id);
             return View(bp);
         }
@@ -44,7 +46,21 @@ namespace BPMeasurement.Controllers
                 return RedirectToAction("Index", "Home");
             } else
             {
+
+                foreach (var modelStateKey in ViewData.ModelState.Keys)
+                {
+                    var value = ViewData.ModelState[modelStateKey];
+                    foreach (var error in value.Errors)
+                    {
+                        // You can log these errors, or inspect them while debugging
+                        var errorMessage = error.ErrorMessage;
+                        // Log the error message or set a breakpoint here to inspect
+                    }
+                }
+
+
                 ViewBag.Action = (bp.BloodPressureId == 0) ? "Add" : "Edit";
+                ViewBag.Positions = _bpDbContext.Positions.OrderBy(p => p.Name).ToList();
                 return View(bp);
             }
         }

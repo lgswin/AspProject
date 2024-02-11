@@ -8,13 +8,13 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace BPMeasurement.Migrations
 {
     /// <inheritdoc />
-    public partial class Update : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Positons",
+                name: "Positions",
                 columns: table => new
                 {
                     ID = table.Column<string>(type: "nvarchar(450)", nullable: false),
@@ -22,7 +22,7 @@ namespace BPMeasurement.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Positons", x => x.ID);
+                    table.PrimaryKey("PK_Positions", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(
@@ -40,15 +40,15 @@ namespace BPMeasurement.Migrations
                 {
                     table.PrimaryKey("PK_BloodPressures", x => x.BloodPressureId);
                     table.ForeignKey(
-                        name: "FK_BloodPressures_Positons_PositionId",
+                        name: "FK_BloodPressures_Positions_PositionId",
                         column: x => x.PositionId,
-                        principalTable: "Positons",
+                        principalTable: "Positions",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.InsertData(
-                table: "Positons",
+                table: "Positions",
                 columns: new[] { "ID", "Name" },
                 values: new object[,]
                 {
@@ -81,7 +81,7 @@ namespace BPMeasurement.Migrations
                 name: "BloodPressures");
 
             migrationBuilder.DropTable(
-                name: "Positons");
+                name: "Positions");
         }
     }
 }

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BPMeasurement.Migrations
 {
     [DbContext(typeof(BPDbContext))]
-    [Migration("20240211001707_Update")]
-    partial class Update
+    [Migration("20240211013025_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -98,7 +98,7 @@ namespace BPMeasurement.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Positons");
+                    b.ToTable("Positions");
 
                     b.HasData(
                         new

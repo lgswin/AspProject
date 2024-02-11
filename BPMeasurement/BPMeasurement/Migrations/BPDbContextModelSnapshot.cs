@@ -95,7 +95,7 @@ namespace BPMeasurement.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Positons");
+                    b.ToTable("Positions");
 
                     b.HasData(
                         new

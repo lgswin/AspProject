@@ -10,7 +10,7 @@ namespace BPMeasurement.Entities
 		}
 
 		public DbSet<BloodPressure> BloodPressures { get; set; }
-        public DbSet<Position> Positons { get; set; }
+        public DbSet<Position> Positions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
