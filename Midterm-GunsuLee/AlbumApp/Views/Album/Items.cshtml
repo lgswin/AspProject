@@ -1,0 +1,46 @@
+﻿@model List<Album>
+
+
+@{
+    ViewData["Title"] = "All Albums";
+}
+
+<a asp-controller="Album" asp-action="GetAddAlbum">Add new Album</a>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Song</th>
+            <th>Rating</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Album album in Model)
+        {
+            <tr>
+                <td>
+                    @{
+                        if (album.Title.Length <= 12)
+                        {
+                            @album.Title
+                        }
+                        else
+                        {
+                            @album.Title.Substring(0, 12)<text>...</text>
+                        }
+                    }
+                </td>
+                <td>@album.Artist</td>
+                <td>@album.Song</td>
+                <td>@album.Rating</td>
+                <td>
+                    <a asp-controller="Album" asp-action="GetAlbumById" asp-route-id="@album.AlbumId">Details</a>
+                    <span class="mx-1">|</span>
+                    <a asp-controller="Album" asp-action="GetEditAlbumById" asp-route-id="@album.AlbumId">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

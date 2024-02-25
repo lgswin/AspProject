@@ -1,0 +1,33 @@
+﻿@model Album
+@{
+    ViewData["Title"] = "Add Album";
+}
+
+<form asp-controller="Album" asp-action="AddNewAlbum"
+      method="post" enctype="application/x-www-form-urlencoded">
+    <div class="text-danger" asp-validation-summary="All"></div>
+
+    <div class="form-group">
+        <label asp-for="Title">Album title</label>
+        <input type="text" asp-for="Title" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Artist">Author</label>
+        <input type="text" asp-for="Artist" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Song">Song</label>
+        <input type="text" asp-for="Song" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Rating">Rating</label>
+        <input type="text" asp-for="Rating" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add</button>
+    <a asp-controller="Album" asp-action="Items"
+       class="btn btn-primary">Cancel</a>
+</form>

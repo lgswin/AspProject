@@ -1,0 +1,19 @@
+﻿@model HeartRateMeasurement
+
+@{
+    ViewData["Title"] = "Detailed view";
+}
+
+<div>
+    <a asp-controller="HeartRate" asp-action="GetAllMeasurement">All measurements</a>
+    <span class="mx-1">|</span>
+    <a asp-controller="HeartRate" asp-action="GetAddMeasurementRequest">Add a new measurement</a>
+    <span class="mx-1">|</span>
+    <a asp-controller="HeartRate" asp-action="GetEditMeasurementRequestById" asp-route-id="@Model.HeartRateMeasurementId">Edit this measurement</a>
+    <p class="mt-3">Value: @Model.BPMValue</p>
+    <p>Date taken: @Model.MeasurementDate?.ToString("d")</p>
+    @if (!string.IsNullOrEmpty(Model.Position))
+    {
+        <p>Position: @Model.Position</p>
+    }
+</div>

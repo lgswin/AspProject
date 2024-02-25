@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{A3EA93EC-BC6B-4BBE-8B62-BDFEED11FD42}|http">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.HeartRateTracker PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HeartRateTracker/appsettings.json">
+    <Files>
+      <File FileName="HeartRateTracker/Controllers/HeartRateController.cs" Line="94" Column="2" />
+      <File FileName="HeartRateTracker/Views/HeartRate/Add.cshtml" />
+      <File FileName="HeartRateTracker/appsettings.json" Line="10" Column="87" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Heart-Rate-Tracker" expanded="True">
+            <Node name="HeartRateTracker" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="HeartRate" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

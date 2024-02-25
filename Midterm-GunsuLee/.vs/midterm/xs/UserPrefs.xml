@@ -1,0 +1,50 @@
+﻿<Properties StartupConfiguration="{26019C0D-EA81-4706-9EBF-4405D93E7F74}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.AlbumApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AlbumApp/Views/Album/Items.cshtml">
+    <Files>
+      <File FileName="AlbumApp/Entities/AlbumsDbContext.cs" Line="25" Column="19" />
+      <File FileName="AlbumApp/Controllers/HomeController.cs" />
+      <File FileName="AlbumApp/Controllers/AlbumController.cs" Line="12" Column="48" />
+      <File FileName="AlbumApp/Views/Album/Items.cshtml" Line="36" Column="37" />
+      <File FileName="AlbumApp/appsettings.json" Line="14" Column="1" />
+      <File FileName="AlbumApp/Program.cs" Line="12" Column="56" />
+      <File FileName="AlbumApp/Views/Home/Index.cshtml" Line="7" Column="59" />
+      <File FileName="AlbumApp/Entities/Album.cs" Line="22" Column="46" />
+      <File FileName="AlbumApp/Migrations/20240224143917_Initial.cs" Line="1" Column="1" />
+      <File FileName="AlbumApp/Views/Album/Add.cshtml" Line="29" Column="1" />
+      <File FileName="AlbumApp/Views/Album/Item.cshtml" Line="15" Column="59" />
+      <File FileName="AlbumApp/Views/Album/Edit.cshtml" Line="27" Column="26" />
+      <File FileName="AlbumApp/Views/Shared/_Layout.cshtml" Line="61" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="midterm" expanded="True">
+            <Node name="NuGet.Config files" expanded="True" />
+            <Node name="AlbumApp" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Entities" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Album" expanded="True">
+                  <Node name="Items.cshtml" selected="True" />
+                </Node>
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

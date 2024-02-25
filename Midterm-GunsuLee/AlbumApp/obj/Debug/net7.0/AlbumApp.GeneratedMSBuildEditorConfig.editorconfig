@@ -1,0 +1,61 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AlbumApp
+build_property.RootNamespace = AlbumApp
+build_property.ProjectDir = /Users/gslee/Documents/Conestoga/11_ASP.net/midterm/midterm-starting-code/AlbumApp/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/gslee/Documents/Conestoga/11_ASP.net/midterm/midterm-starting-code/AlbumApp
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/gslee/Documents/Conestoga/11_ASP.net/midterm/midterm-starting-code/AlbumApp/Views/Album/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWxidW0vQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gslee/Documents/Conestoga/11_ASP.net/midterm/midterm-starting-code/AlbumApp/Views/Album/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWxidW0vRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gslee/Documents/Conestoga/11_ASP.net/midterm/midterm-starting-code/AlbumApp/Views/Album/Item.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWxidW0vSXRlbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gslee/Documents/Conestoga/11_ASP.net/midterm/midterm-starting-code/AlbumApp/Views/Album/Items.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWxidW0vSXRlbXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gslee/Documents/Conestoga/11_ASP.net/midterm/midterm-starting-code/AlbumApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gslee/Documents/Conestoga/11_ASP.net/midterm/midterm-starting-code/AlbumApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gslee/Documents/Conestoga/11_ASP.net/midterm/midterm-starting-code/AlbumApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gslee/Documents/Conestoga/11_ASP.net/midterm/midterm-starting-code/AlbumApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gslee/Documents/Conestoga/11_ASP.net/midterm/midterm-starting-code/AlbumApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gslee/Documents/Conestoga/11_ASP.net/midterm/midterm-starting-code/AlbumApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gslee/Documents/Conestoga/11_ASP.net/midterm/midterm-starting-code/AlbumApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-tn2busqg0o

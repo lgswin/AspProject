@@ -1,0 +1,77 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* Customize datepicker calendar */
+.ui-datepicker {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.ui-datepicker-header {
+    background-color: #337ab7;
+    color: #ffffff;
+}
+
+.ui-datepicker-title {
+    font-weight: bold;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+    cursor: pointer;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.ui-datepicker-calendar {
+    border: 1px solid #cccccc;
+}
+
+.ui-datepicker-calendar th {
+    background-color: #f5f5f5;
+}
+
+.ui-datepicker-calendar td {
+    padding: 5px;
+}
+
+.ui-datepicker-calendar td a {
+    color: #333333;
+}
+
+.ui-datepicker-calendar td a:hover {
+    background-color: #eeeeee;
+}
+
+.ui-datepicker-current-day {
+    background-color: #337ab7;
+    color: #ffffff;
+}
+
+.ui-datepicker-unselectable {
+    color: #999999;
+}
+
+.ui-datepicker a, .ui-datepicker a:visited, .ui-datepicker a:hover, .ui-datepicker a:focus {
+    color: #ffffff;
+    text-decoration: none;
+}

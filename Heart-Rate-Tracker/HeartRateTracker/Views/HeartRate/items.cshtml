@@ -1,0 +1,30 @@
+﻿@model List<HeartRateMeasurement>
+
+@{
+    ViewData["Title"] = "All Heart rate measurements";
+}
+
+<a asp-controller="HeartRate" asp-action="GetAddMeasurementRequest">Add new heart rate measurement</a>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>BPM</th>
+            <th>Date of Measurement</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (HeartRateMeasurement msmt in Model)
+        {
+            <tr>
+                <td>@msmt.BPMValue</td>
+                <td>@msmt.MeasurementDate?.ToString("d")</td>
+                <td>
+                    <a asp-controller="HeartRate" asp-action="GetMeasurementById" asp-route-id="@msmt.HeartRateMeasurementId">Details</a>
+                    <span class="mx-1">|</span>
+                    <a asp-controller="HeartRate" asp-action="GetEditMeasurementRequestById" asp-route-id="@msmt.HeartRateMeasurementId">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

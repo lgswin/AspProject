@@ -1,0 +1,21 @@
+﻿@model Album
+@{
+    ViewData["Title"] = "Album view";
+}
+
+<div>
+    <a asp-controller="Album" asp-action="Items">
+        All Albums
+    </a>
+    <span class="mx-1">|</span>
+    <a asp-controller="Album" asp-action="GetAddAlbum">
+        Add a new album
+    </a>
+    <span class="mx-1">|</span>
+    <a asp-controller="Album" asp-action="GetEditAlbumById"
+       asp-route-id="@Model.AlbumId">Edit this album</a>
+    <p class="mt-3">Album title: @Model.Title</p>
+    <p class="mt-3">Song title: @Model.Song</p>
+    <p class="mt-3">Artist: @Model.Artist</p>
+    <p class="mt-3">Rating: @Model.Rating</p>
+</div>
